@@ -11,11 +11,10 @@ class UserSocial extends Model
 
     use Notifiable;
     use SoftDeletes;
-    
     public $timestamps = true;
     protected $table = 'user_socials';
 
-    protected $fillable = ['cpf', 'nome', 'phone','birth','gender','notes','email','password','status','permission'];
-    protected $hidden = ['password', 'remember_token'];
+    protected $fillable = ['user_id', 'social_network', 'social_id','social_email','social_aatar'];
+    protected $hidden = [];
     
 }
