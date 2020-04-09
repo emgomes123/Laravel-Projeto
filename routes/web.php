@@ -16,3 +16,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+//Routes to user auth
+//============================================================
+Route::get('/login',['uses' => 'Controller@fazerLogin']);
+Route::post('/login',['as' =>  'user.login', 'Controller@login']);

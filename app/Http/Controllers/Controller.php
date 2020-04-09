@@ -10,4 +10,17 @@ use Illuminate\Routing\Controller as BaseController;
 class Controller extends BaseController
 {
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
+   
+
+    //Method to user Login VIEW
+//============================================================
+    public function fazerLogin()
+    {
+        return view('user.login');
+        echo "Tela de Login";
+    }
+//============================================================
+
+
+
 }
