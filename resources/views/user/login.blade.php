@@ -8,15 +8,8 @@
     <link href = "https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
 
 
-
-
 </head>
-
-
 <body>
-
-
-
 
 <div class="background"></div>
 
@@ -27,26 +20,28 @@
 
         {!! Form::open(['route' => 'user.login', 'method' => 'post']) !!}
 
-        <p><h2>Acesse o Sistema</h2></p>
+                <p><h2>Acesse o Sistema</h2></p>
 
-        <label>
-        {!!  form::text('username', null, ['class' => 'input', 'placeholder' => "Usuário "]) !!}
-        </label>
+                <label>
 
-       <label>
-       {!! Form::password('password', ['placeholder' => 'Senha'])  !!}
+                     {!!  form::text('username', null, ['class' => 'input', 'placeholder' => "Usuário "]) !!}
 
-       </label>
+                </label>
 
-        {!! Form::submit('Entrar') !!}
+                <label>
 
+                     {!! Form::password('password', ['placeholder' => 'Senha'])  !!}
 
-
+                </label>
 
 
 
-    
-{!! Form::close() !!}
+                 {!! Form::submit('Entrar') !!}
+
+
+
+
+        {!! Form::close() !!}
 
 
 
